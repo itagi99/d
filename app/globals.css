@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #f97316;
+  --primary-dark: #ea580c;
+  --ocean: #0ea5e9;
+  --ocean-dark: #0284c7;
+}
+
+body {
+  @apply bg-gray-50 text-gray-900 antialiased;
+}
+
+.btn-primary {
+  @apply bg-gradient-to-r from-primary-500 to-primary-600 text-white font-semibold py-3 px-6 rounded-xl shadow-lg shadow-primary-500/30 hover:shadow-primary-500/50 transition-all active:scale-95;
+}
+
+.btn-ocean {
+  @apply bg-gradient-to-r from-ocean-500 to-ocean-600 text-white font-semibold py-3 px-6 rounded-xl shadow-lg shadow-ocean-500/30 hover:shadow-ocean-500/50 transition-all active:scale-95;
+}
+
+.card {
+  @apply bg-white rounded-2xl shadow-sm border border-gray-100 p-4;
+}
+
+.input-field {
+  @apply w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition-all;
+}
+
+.tab-active {
+  @apply bg-gradient-to-r from-ocean-500 to-ocean-600 text-white shadow-md;
+}
+
+.tab-inactive {
+  @apply text-gray-500 hover:bg-gray-100;
+}
